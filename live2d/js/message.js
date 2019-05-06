@@ -34,7 +34,7 @@ $(document).on('copy', function (){
 function initTips(){
     $.ajax({
         cache: true,
-        url: `${message_Path}message.json`,
+        url: `live2d/message.json`,//message_Path
         dataType: "json",
         success: function (result){
             $.each(result.mouseover, function (index, tips){
@@ -73,7 +73,7 @@ initTips();
             text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
         }
     }else {
-        if (window.location.href == `${home_Path}`) { //主页URL判断，需要斜杠结尾
+        if (window.location.href == `https://y460119195.github.io/`) { //主页URL判断，需要斜杠结尾  home_Path
             var now = (new Date()).getHours();
             if (now > 23 || now <= 5) {
                 text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？';
