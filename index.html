@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" charset="utf-8" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js
+    "></script>
   <title>Index</title>
-  <!--<script type="text/javascript" src="JS/sukura.js"></script>íí-->
+  <!--<script type="text/javascript" src="JS/sukura.js"></script>-->
   <style>
     .welcomeFontStyle {
       text-align: center;
@@ -20,7 +22,7 @@
   </div>
 
   <div id="landlord">
-    <div class="message" style="opacity: 0;"></div>
+    <div class="message" style="opacity: 0;">Welcome to my Index!</div>
     <canvas id="live2d" width="280" height="360" class="live2d"></canvas>
   </div>
   <script type="text/javascript">
@@ -46,21 +48,20 @@
 
         //PC浏览
         document.write(
-          '<script type="text/javascript" charset="utf-8" src="js/message.js"><\/script>'
-          );
+          '<script type="text/javascript" charset="utf-8" src="live2d/js/message.js"><\/script>'
+        );
         document.write(
-          '<script type="text/javascript" charset="utf-8" src="js/live2d.js"><\/script>'
-          );
+          '<script type="text/javascript" charset="utf-8" src="live2d/js/live2d.js"><\/script>'
+        );
       }
     }
     browserRedirect();
   </script>
-  <script type="text/javascript" charset="utf-8"
-    src="js/message.js"></script>
-  <script type="text/javascript" charset="utf-8"
-    src="js/live2d.js"></script>
+  <script type="text/javascript" charset="utf-8" src="live2d/js/message.js"></script>
+  <script type="text/javascript" charset="utf-8" src="live2d/js/live2d.js"></script>
   <script type="text/javascript">
     loadlive2d("live2d", "live2d/model/tia/model.json");
   </script>
 </body>
+
 </html>
