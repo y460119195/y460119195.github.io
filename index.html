@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script type="text/javascript" charset="utf-8" src="JS/jquery.min.js"></script>
   <title>Index</title>
-  <script type="text/javascript" src="JS/sukura.js"></script>
+  <!--
+<script type="text/javascript" src="JS/sukura.js"></script>
+  -->
   <style>
     .welcomeFontStyle {
       text-align: center;
@@ -24,6 +26,22 @@
     <div class="message" style="opacity: 0;">Welcome to my Index!</div>
     <canvas id="live2d" width="280" height="360" class="live2d"></canvas>
   </div>
+
+  <script type="text/javascript">
+    //樱花
+    var system = {};
+    var p = navigator.platform;
+    system.win = p.indexOf("Win");
+    system.mac = p.indexOf("Mac");
+    system.x11 = (p == "X11") || (p.indexOf("Linux"));
+    if (Math.abs(system.win || system.mac || system.xll)) { //如果是电脑
+      document.write("<script type='text/javascript' src='JS/sukura.js'><//script>");
+      //$.getScript("JS/sukura.js");
+    } else { //如果是手机
+
+    }
+  </script>
+
   <script type="text/javascript">
     var message_Path = 'live2d/'
     var home_Path = 'https://y460119195.github.io/'
